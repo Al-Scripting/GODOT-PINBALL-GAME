@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://65fxdniokcr1"]
+
+[ext_resource type="Script" path="res://Scripts/Flipper_Left.gd" id="1_ojqy4"]
+[ext_resource type="Texture2D" uid="uid://bgufffpljjqag" path="res://Sprites/Blank2.png" id="2_t6m8v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4e8bp"]
+size = Vector2(320, 20)
+
+[node name="FlipperL" type="CharacterBody2D"]
+rotation = 0.436332
+scale = Vector2(1.00237, 1.00861)
+script = ExtResource("1_ojqy4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4.96, 1.2)
+texture = ExtResource("2_t6m8v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.00314, 3.92)
+shape = SubResource("RectangleShape2D_4e8bp")
